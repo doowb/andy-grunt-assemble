@@ -1,0 +1,26 @@
+{{> html }}
+
+  {{> head }}
+  <body class="{{#if notification}} has-notification{{/if}}">
+
+    <div class="outer-wrapper">
+      <div class="inner-wrapper">
+        <div class="main-wrapper">
+          <a class="skiplink visuallyhidden focusable" href="#main" tabindex="0">
+            <span>Skip to main content</span>
+          </a>
+
+          <main id="main" role="main">
+            <div class="content-wrapper content-wrapper--main">
+              {% body %}
+            </div>
+          </main>
+
+          {{> footer }}
+        </div>
+      </div>
+    </div>
+
+    {{> scripts }}
+  </body>
+</html>
